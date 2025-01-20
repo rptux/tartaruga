@@ -1,15 +1,39 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetrix</title>
+    <title>Tartaruga Look</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="gameCanvas" width="300" height="600"></canvas>
-    <button id="startButton">Iniciar Jogo</button>
-    <script src="tetrix.js"></script>
+    <h1>Tartaruga Look - MLook do Prof. Ricardo</h1>
+    <p>Insira comandos para controlar a tartaruga:</p>
+    <textarea id="commandInput" rows="3" cols="50" placeholder="Digite os comandos aqui, separados por '>'..."></textarea><br>
+    <button id="executeButton">Executar Comando</button>
+    <button id="clearButton">Limpar Último Comando</button>
+    <div>
+        <canvas id="turtleCanvas" width="600" height="600"></canvas>
+    </div>
+    <div>
+        <h2>Comandos Disponíveis:</h2>
+        <pre>
+- mover [distância] (cm)
+- girar [graus] para a [direita/esquerda]
+- levantar
+- baixar
+- Exemplo: para criar ângulo:
+  girar 90 graus para a direita
+        </pre>
+    </div>
+    <div>
+        <h2>Algoritmos Executados:</h2>
+        <textarea id="commandList" rows="10" cols="50" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
